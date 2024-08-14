@@ -1,6 +1,7 @@
+require("dotenv").config();
 const io = require("socket.io")(8800, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: process.env.URL,
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
