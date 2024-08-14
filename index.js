@@ -1,7 +1,7 @@
 require("dotenv").config();
 const io = require("socket.io")(8800, {
   cors: {
-    origin: process.env.URL,
+    origin: "https://yuvrajtharu11.netlify.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
